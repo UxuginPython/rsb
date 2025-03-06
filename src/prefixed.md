@@ -1,8 +1,6 @@
-# General Format
+# Prefixed Information
 
-RSB uses an XML-like tag system for internal organization. This system is designed for both extensibility and backwards compatibility. Unlike XML though, RSB is a binary file format.
-
-The most basic layout is "magic numbers - version - node list."
+The layout of an RSB file at its most basic level is "magic numbers - version - tag tree." The tag tree is discussed more thoroughly in the [next chapter](tree.md).
 
 ## Magic Numbers
 
