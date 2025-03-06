@@ -1,6 +1,6 @@
 # Tag Index
 
-Every tag has an associated `i8` value. See [3. Tag Tree](./tree.md) for information about matched and unmatched tags.
+Every tag has an associated `i8` value. See the [Tag Tree](./tree.md) chapter for information about matched and unmatched tags.
 
 ## Unmatched
 
