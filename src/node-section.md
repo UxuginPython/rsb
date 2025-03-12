@@ -4,7 +4,7 @@ The node section is the most important part of the tag tree. There is exactly on
 
 ## Node Blocks
 
-A node block, created with `NODE_START` (2) and `NODE_END` (-2) tags, represents a Stream Builder node. It contains exactly one of each of three things: the type of node, its coordinates, and a list of its inputs. The way these work is fairly intuitive. **All information besides the node ID, coordinates, and its input list must be ignored.**
+A node block, created with `NODE_START` (2) and `NODE_END` (-2) tags, represents a Stream Builder node. It contains exactly one of each of three things in any order: the type of node, its coordinates, and a list of its inputs. The way these work is fairly intuitive. **All information besides the node ID, coordinates, and its input list must be ignored.**
 
 ### `NODE_ID` (0) Tag
 

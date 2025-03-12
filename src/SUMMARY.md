@@ -1,5 +1,6 @@
 # Summary
 
+[RRTK RSB Specification](./title.md)
 [Reading the Specification](./reading.md)
 [Specification Versioning](./versioning.md)
 
