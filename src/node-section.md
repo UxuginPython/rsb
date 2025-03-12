@@ -1,10 +1,10 @@
 # Node Section
 
-The node section is the most important part of the tag tree. There is exactly one node section in an RSB file. It is composed of a block created by `NODE_SECTION_START` (1) and `NODE_SECTION_END` (-1) tags containing an ordered list of node blocks.
+The node section is the most important part of the tag tree. There is exactly one node section in an RSB file. It is composed of a block created by `NODE_SECTION_START` (1) and `NODE_SECTION_END` (-1) tags containing an ordered list of node blocks. **All information in a node section besides nodes must be ignored.**
 
 ## Node Blocks
 
-A node block, created with `NODE_START` (2) and `NODE_END` (-2) tags, represents a Stream Builder node. It contains three things: the type of node, its coordinates, and a list of its inputs. The way these work is fairly intuitive.
+A node block, created with `NODE_START` (2) and `NODE_END` (-2) tags, represents a Stream Builder node. It contains exactly one of each of three things: the type of node, its coordinates, and a list of its inputs. The way these work is fairly intuitive. **All information besides the node ID, coordinates, and its input list must be ignored.**
 
 ### `NODE_ID` (0) Tag
 
