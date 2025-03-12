@@ -8,4 +8,5 @@
 - [Node Section](./node-section.md)
 
 [Tag Index](./tags.md)
+[Node Index](./nodes.md)
 [Example](./example.md)

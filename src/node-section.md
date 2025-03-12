@@ -12,10 +12,7 @@ A node block, created with `NODE_START` (2) and `NODE_END` (-2) tags, represents
 NODE_ID SKIP_2 id_u16
 ```
 
-Every node block contains a node ID, which tells what kind of node it is. This is represented by a `NODE_ID` tag, a `SKIP_2` tag, and a `u16` node ID. `NODE_ID` is an unmatched tag. A list of node IDs is provided below:
-
-|Node|ID|
-|----|--|
+Every node block contains a node ID, which tells what kind of node it is. This is represented by a `NODE_ID` tag, a `SKIP_2` tag, and a `u16` node ID. `NODE_ID` is an unmatched tag. An [index of node IDs](nodes.html) is provided at the end of the specification.
 
 ### `COORDINATES` (3) Tag
 

@@ -3,7 +3,7 @@
 Here is an example of a file containing two nodes, each with two inputs, with the first input of the second node connected to the output of the first node. All other inputs are disconnected.
 
 ```ignore
-rrtkstrmbldr 0u8 0u8 0u8 0u8 //This is not a real specification version.
+rrtkstrmbldr 1u8 0u8 0u8 0u8
 NODE_SECTION_START
     NODE_START
         NODE_ID SKIP_2 0u16
