@@ -29,7 +29,7 @@ COORDINATES SKIP_8 x_f64 SKIP_8 y_f64
 ### Input List
 
 ```ignore
-NODE_INPUT_LIST_START SKIP_U8 (input count * 2)u8
+NODE_INPUT_LIST_START SKIP_U8 (input count * 2 - 1)u8
     input_u16
     input_u16
     input_u16
