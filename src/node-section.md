@@ -36,7 +36,7 @@ NODE_INPUT_LIST_START SKIP_U8 (input count * 2 - 1)u8
 NODE_INPUT_LIST_END
 ```
 
-The final element of a node block is its input list. Unlike the node ID and coordinates, the input list is delimited by a pair matched tags, `NODE_INPUT_LIST_START` (4) and `NODE_INPUT_LIST_END` (-4). Between these tags is simply a list of escaped `u16`s. These are zero-indexed indices of the broader node section, each representing an input for the node. Disconnected inputs have a special value of 65535. All inputs must be escaped with a skip tag. Usually, this will take the form of a `SKIP_U8` just inside the node input list block. To skip all inputs, the value of the `SKIP_U8` should be equal to the number of inputs multiplied by 2 as each input (`u16`) takes 2 bytes. Alternatively, an implementor may simple insert a `SKIP_2` tag before each input:
+The final element of a node block is its input list. Unlike the node ID and coordinates, the input list is delimited by a pair matched tags, `NODE_INPUT_LIST_START` (4) and `NODE_INPUT_LIST_END` (-4). Between these tags is simply a list of escaped `u16`s. These are zero-indexed indices of the broader node section, each representing an input for the node. Disconnected inputs have a special value of 65535. All inputs must be escaped with a skip tag. Usually, this will take the form of a `SKIP_U8` just inside the node input list block. To skip all inputs, the value of the `u8` following the `SKIP_U8` tag should be equal to the number of inputs multiplied by 2 with 1 subtracted because each input (`u16`) takes 2 bytes and `SKIP_U8` skips 1 more than the `u8` following it. Alternatively, an implementor may simply insert a `SKIP_2` tag before each input:
 
 ```ignore
 NODE_INPUT_LIST_START
